@@ -28,7 +28,7 @@ const AddMember = () => {
       [e.target.name]: e.target.value
     });
 
-    // Check if all required fields are filled
+    // Check if required fields are filled
     const isComplete =  formData.relationshipType.trim() !== '' &&
     formData.firstName.trim() !== '' &&
     formData.surname.trim() !== '';
@@ -41,7 +41,6 @@ const AddMember = () => {
     try {
       const response = await axios.post('http://localhost:5000/createPerson', formData); // Use axios.post
       console.log('Data saved:', response.data);
-      // Reset the form after successful submission
       setFormData({
         relationshipType: '',
         firstName: '',
@@ -54,7 +53,7 @@ const AddMember = () => {
         birthPlace: '',
         currentPlace: '',
       });
-      setShowDialog(false); // Close the dialog after submission
+      setShowDialog(false); 
       setSuccessMessage('You have successfully added a member!');
     } catch (error) {
       console.error('Error saving data:', error);
@@ -63,7 +62,6 @@ const AddMember = () => {
 
   const handleBack = () => {
     console.log('Go back');
-    // Implement any necessary functionality for the back button
   };
 
   return (

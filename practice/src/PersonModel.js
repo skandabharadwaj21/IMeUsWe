@@ -19,7 +19,6 @@ app.post("/createPerson", async function (req, res) {
     }
   });
 
-  // GET data by perticular ID
   app.get("/fetchDetails", async function(req, res){
     try{
       const {id} = req.query

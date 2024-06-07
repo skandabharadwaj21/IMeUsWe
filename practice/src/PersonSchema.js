@@ -22,7 +22,7 @@ const personSchema = new Schema({
   status: {
     type: String,
     required: true,
-    enum: ['living', 'deceased'] // Define the possible status values
+    enum: ['living', 'deceased']
   },
   birthYear:{
     type: Number,
