@@ -1,0 +1,79 @@
+  /* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Left side: company logo */
+.left-nav .nav-logo {
+  height: 40px;
+}
+
+/* Right side: search bar */
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 300px;
+}
+
+.search-legend {
+  position: absolute;
+  top: -8px;
+  left: 40px;
+  background-color: white;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.search-input {
+  padding: 10px 30px 10px 35px; /* Adjust padding for the search icon */
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none; /* Prevents clicking on the icon */
+}
+
+.icon {
+  text-align: center;
+  cursor: pointer;
+  font-size: 2em;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.icon:hover {
+  color: black;
+}
+
+hr{
+  background-color: #888;
+}
