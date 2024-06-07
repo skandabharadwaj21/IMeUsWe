@@ -1,0 +1,220 @@
+.container{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(145, 188, 238, 0.808);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.my-family{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+p{
+    font-size: 35px;
+}
+
+.addMembers{
+    border-radius: 8px;
+    height: 44px;
+    width: 135px;
+    background-color: #005dffcc;
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.dialog {
+    position: fixed;
+    width: 500px;
+    height: 550px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.753);
+  }
+
+
+  .dialog-content{
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .backBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .profile-div{
+    height: 40px;
+    width: 100%;
+    margin-left: -60px;
+    margin-bottom: 40px;
+  }
+
+  .profile-pic{
+    font-size: 20px;
+    color: #005dffcc;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+ .addButton {
+    background: rgb(128 128 128 / 28%);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .addButton.enabled {
+    background-color: #005dffcc; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  .dialog-content input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-left: -30px;
+    outline: none;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .dialog-content input:focus{
+    outline: 1px solid #005dffcc;
+  }
+  ::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .mandatory {
+    color: red;
+    margin-left: 3px;
+  }
+
+  .relation-field {
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 300px;
+  }
+  
+  .relation-legend {
+    position: absolute;
+    top: -8px;
+    left: 70px;
+    background-color: white;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  .relation-input {
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .addProfileImg{
+    height: 40px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+  }
+
+  .status{
+    margin-right: 338px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+  .status-radio{
+    display: flex;
+    margin-top: 7px;
+    margin-left: 44px;
+    margin-bottom: 10px;
+  }
+
+  .status-radio input:focus{
+    outline: none;
+  }
+
+  .status-radio > label{
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .birth-label{
+    margin-right: 315px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+  .birth-div{
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 63px;
+  }
+
+  .birth-div > select{
+    border-radius: 5px;
+    height: 38px;
+    width: 120px;
+    outline: #005dffcc;
+  }
+
+  .birth-div > input{
+    width: 120px;
+  }
+
+  .success-message{
+    color: green;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+
+  }
+  
